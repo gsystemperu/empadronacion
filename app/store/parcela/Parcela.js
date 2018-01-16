@@ -1,0 +1,25 @@
+Ext.define("ExtMVC.store.parcela.Parcela",{
+   extend:"Ext.data.Store",
+   model:"ExtMVC.model.parcela.Parcela",
+   sorters:[
+       {
+           property:"parcelaid",
+           direction:"asc"
+       }
+   ],
+   proxy:{
+       type:"ajax",
+       api:{
+           read:"cdiempadronacion/parcela/lista"
+       },
+       writer:{
+           type:"json",
+           root:"data",
+           encode:true
+       },
+       reader:{
+           type:"json",
+           root:"data"
+       }
+   }
+});

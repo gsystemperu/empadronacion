@@ -1,0 +1,13 @@
+Ext.define("ExtMVC.model.central.Central",{
+   extend:"Ext.data.Model",
+   fields:[
+       {
+           name:"centralid",
+           type:"int"
+       },
+       {
+           name:"descripcion",
+           type:"string"
+       }
+   ]
+});

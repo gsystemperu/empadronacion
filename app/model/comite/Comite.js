@@ -1,0 +1,43 @@
+Ext.define("ExtMVC.model.comite.Comite",{
+   extend:"Ext.data.Model",
+   fields:[
+       {
+           name:"comiteid",
+           type:"int"
+       },
+       {
+           name:"codigointerno",
+           type:"string"
+       },
+       {
+           name:"centralid",
+           type:"string"
+       },
+       {
+           name:"direccion",
+           type:"string"
+       },
+       {
+           name:"central",
+           type:"string"
+       },
+       {
+           name:"idsuper",
+           type:"int"
+       },
+       {
+           name:"idcoor",
+           type:"int"
+       },
+       {
+           name:"primeraprioridad",
+           type:"int"
+       },
+       {
+           name:"segundaprioridad",
+           type:"int"
+       }
+   ]
+});
+
+
